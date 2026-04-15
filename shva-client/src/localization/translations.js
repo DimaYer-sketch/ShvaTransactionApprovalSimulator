@@ -1,0 +1,108 @@
+export const translations = {
+  en: {
+    header: {
+      english: 'ENG',
+      hebrew: 'Hebrew',
+      logout: 'Logout',
+    },
+    hero: {
+      badge: 'TRANSACTION SIMULATOR',
+      title: 'Will this transaction be approved?',
+      illustrationAlt: 'Transaction simulator illustration',
+      phoneAlt: 'Mobile preview',
+    },
+    simulator: {
+      regionLabel: 'Label',
+      regionPlaceholder: 'search',
+      noResults: 'No results found',
+      timeTitle: 'Enter time',
+      hourLabel: 'Hour',
+      minuteLabel: 'Minute',
+      cancel: 'Cancel',
+      ok: 'OK',
+      clearRegion: 'Clear selected region',
+      errors: {
+        regionRequired: 'Region is required.',
+        regionInvalid: 'Please select a region from the list.',
+        timeInvalid: 'Time must contain valid numbers.',
+        hourInvalid: 'Hour must be between 0 and 23.',
+        minuteInvalid: 'Minute must be between 0 and 59.',
+        rejected:
+          'Transaction rejected. The selected time is outside banking hours (08:00–18:00).',
+        sessionExpired: 'Session expired. Please login again.',
+        requestFailed: 'Request failed. Please try again.',
+      },
+    },
+    login: {
+      username: 'Username',
+      password: 'Password',
+      login: 'Login',
+      loading: '...',
+      errors: {
+        required: 'Username and password are required',
+        invalid: 'Invalid credentials',
+      },
+    },
+    approved: {
+      title: 'Approved Transactions',
+      time: 'Time',
+      timeZone: 'Time Zone',
+      empty: 'No approved transactions yet.',
+      previous: 'Previous transactions',
+      next: 'Next transactions',
+    },
+  },
+
+  he: {
+    header: {
+      english: 'אנגלית',
+      hebrew: 'עברית',
+      logout: 'התנתקות',
+    },
+    hero: {
+      badge: 'סימולטור עסקאות',
+      title: 'האם העסקה תאושר?',
+      illustrationAlt: 'איור סימולטור עסקאות',
+      phoneAlt: 'תצוגת מובייל',
+    },
+    simulator: {
+      regionLabel: 'תווית',
+      regionPlaceholder: 'חיפוש',
+      noResults: 'לא נמצאו תוצאות',
+      timeTitle: 'הזן שעה',
+      hourLabel: 'שעה',
+      minuteLabel: 'דקה',
+      cancel: 'ביטול',
+      ok: 'אישור',
+      clearRegion: 'נקה אזור נבחר',
+      errors: {
+        regionRequired: 'יש לבחור אזור.',
+        regionInvalid: 'יש לבחור אזור מתוך הרשימה.',
+        timeInvalid: 'השעה חייבת להכיל מספרים תקינים.',
+        hourInvalid: 'השעה חייבת להיות בין 0 ל-23.',
+        minuteInvalid: 'הדקות חייבות להיות בין 0 ל-59.',
+        rejected: 'העסקה נדחתה. השעה שנבחרה מחוץ לשעות הבנקאות (08:00–18:00).',
+        sessionExpired: 'פג תוקף ההתחברות. יש להתחבר שוב.',
+        requestFailed: 'הבקשה נכשלה. נא לנסות שוב.',
+      },
+    },
+    login: {
+      username: 'שם משתמש',
+      password: 'סיסמה',
+      login: 'התחברות',
+      loading: '...',
+      errors: {
+        required: 'יש להזין שם משתמש וסיסמה',
+        invalid: 'פרטי ההתחברות שגויים',
+      },
+    },
+    approved: {
+      title: 'עסקאות מאושרות',
+      time: 'שעה',
+      timeZone: 'אזור זמן',
+      empty: 'עדיין אין עסקאות מאושרות.',
+      previous: 'עסקאות קודמות',
+      next: 'עסקאות הבאות',
+    },
+  },
+};

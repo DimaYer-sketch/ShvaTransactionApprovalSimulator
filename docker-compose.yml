@@ -1,0 +1,33 @@
+﻿version: '3.9'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: shva-db
+    environment:
+      SA_PASSWORD: 'YourStrong!Pass123'
+      ACCEPT_EULA: 'Y'
+    ports:
+      - '1433:1433'
+
+  backend:
+    build:
+      context: .
+      dockerfile: Shva.Api/Dockerfile
+    container_name: shva-backend
+    depends_on:
+      - db
+    environment:
+      ConnectionStrings__DefaultConnection: 'Server=db;Database=ShvaDb;User Id=sa;Password=YourStrong!Pass123;TrustServerCertificate=True;'
+      Jwt__Key: 'VeryStrongSecretKeyForJwtTokenGeneration_2026_Production_Level_Key'
+    ports:
+      - '5000:8080'
+
+  frontend:
+    build:
+      context: ./shva-client
+    container_name: shva-frontend
+    depends_on:
+      - backend
+    ports:
+      - '3000:80'

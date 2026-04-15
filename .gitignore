@@ -1,0 +1,24 @@
+# .NET
+bin/
+obj/
+
+# Node (на всякий случай глобально)
+node_modules/
+
+# Env
+.env
+.env.*
+
+# Logs
+*.log
+
+# VS / VS Code
+.vscode/
+*.user
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+
+.vs/
