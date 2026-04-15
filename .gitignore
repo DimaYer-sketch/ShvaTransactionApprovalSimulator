@@ -13,6 +13,7 @@ node_modules/
 *.log
 
 # VS / VS Code
+.vs/
 .vscode/
 *.user
 *.suo
@@ -20,5 +21,3 @@ node_modules/
 # OS
 .DS_Store
 Thumbs.db
-
-.vs/
