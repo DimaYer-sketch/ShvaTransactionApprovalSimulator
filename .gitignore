@@ -2,7 +2,7 @@
 bin/
 obj/
 
-# Node (на всякий случай глобально)
+# Node (just in case globally)
 node_modules/
 
 # Env
